@@ -1,0 +1,91 @@
+.device_container{
+    /* width: 40%; */
+    max-width: 500px;
+    min-width: 320px;
+    min-height: 667px;
+    margin:auto;
+    border: 2px solid #B22222;
+    border-radius: 10px;
+    position: relative;
+}
+
+.instruction{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.instruction button{
+    background: transparent;
+    border: none;
+}
+
+.instruction img{
+    width: 30px;
+    height: 30px;
+}
+
+.background_ios{
+    background-image: url(./resources/ios_background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: auto;
+    margin: auto;
+    z-index : 0;
+}
+
+.icon{
+    background-color: rgba(red, green, blue, 0.5);
+    width: 4.5rem;
+    height: 6rem;
+    /* padding: 0.5rem; */
+    border-radius: 0.3rem;
+    text-align: center;
+    transition: all 0.3s linear;
+    margin: auto;
+}
+.icon img{
+    width: 80px;
+    height: 80px;
+}
+
+.icon img[name="KAYA"] {
+    width: 69px;
+    height: 69px;
+    margin-left: 5px;
+    border-radius: 20px;
+}
+
+.icon h4{
+    font-size: 11px;
+    margin: 0.1rem auto;
+    color: white;
+    letter-spacing: 0.01rem;
+    width: 80px;
+}
+
+@media screen and (min-width: 320px) {
+    .background_ios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 112px 112px 112px 112px;
+    }
+}
+  
+@media screen and (min-width: 500px) {
+    .background_ios {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.splash_img{
+    text-align: center;
+}
+
+.splash_img img{
+
+    width: auto;
+    height: 100vh;
+}
